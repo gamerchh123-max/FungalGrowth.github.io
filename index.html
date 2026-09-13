@@ -1,20 +1,54 @@
-<html> 
-	<title>
-		funnyfunland
-	</title>
+<!DOCTYPE html>
+<html lang = "en"> 
+	<head>
+  		<meta charset="UTF-8">
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>
+			funnyfunland
+		</title>
+	</head>
+	<style>
+		@font-face {
+			font-family: wacky;
+ 			src:url(wackowings.ttf);
+		}
+       		body {background-color: #000000;}
+		h1 {	font-family: wacky;
+			text-align:center;
+			color: springgreen;}
+		p {	font-family: wacky;
+			font-size: 20px;
+			text-align:center;
+			color: springgreen;}
+		img{display: flex;
+			width:400px;
+			margin: 0 auto;}
+	</style>
 	<body>
-		<style>
-			h1 {font-size:100px;
-				display: block;
-				width:400px;
-				margin: 0 auto;}
-			img{display: block;
-				width:400px;
-				margin: 0 auto;}
-		</style>
-		<h1>
-			mushroom
+
+		<h1 id="t">
+			MUSHROOM
 		</h1>
 	<img src="bigredshroom.png" alt="sonimcrine">
+		<p>
+			WHIPPY TIPPY TUTU TRALALALA
+			THE UH THE QUICK FOX OR THE DOG YEAH HE JUMPED OVER IT THE FOX UHM, LAZY DOG
+		</p>
+	<script>
+		let time = true;
+		let size = 1;
+		function up() {
+			console.log(size);
+			if (size < 100) {
+				size += 3;
+				document.getElementById("t").style.fontSize = `${size}px`;
+				}
+			else {
+				transform;
+				}
+		}
+		const timer = window.setInterval(up,1);
+		
+	</script>
 	</body>
 </html>
